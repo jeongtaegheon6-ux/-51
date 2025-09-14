@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정치는 권위가 아니다</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .message {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* 모바일에서는 세로로 배치 */
+        @media (max-width: 768px) {
+            .message {
+                font-size: 2.5rem;
+            }
+            
+            .word {
+                display: block;
+            }
+        }
+
+        /* 컴퓨터에서는 가로로 배치 */
+        @media (min-width: 769px) {
+            .message {
+                font-size: 4rem;
+            }
+            
+            .word {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <span class="word">정치는</span>
+        <span class="word"> 권위가</span>
+        <span class="word"> 아니다</span>
+    </div>
+</body>
+</html>
